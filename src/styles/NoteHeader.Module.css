@@ -1,0 +1,42 @@
+.note-header {
+  padding: 1rem 1rem;  /* Reduced padding inside the header for a smaller size */
+  background-color: #16008b;  /* Purple background color */
+  width: 80%;  /* Reduced width to 60% of the screen */
+  
+  position: fixed;  /* Fixed position at the top of the screen */
+  top: 0;  /* Positioned at the top */
+  right: 20%;
+  left: 70%;  /* Align it to the center horizontally */
+  transform: translateX(-50%);  /* Adjust to truly center the header */
+  z-index: 1000;  /* Ensure it stays on top of other content */
+  display: flex;
+  justify-content: flex-end;  /* Align elements to the right */
+  align-items: center;  /* Vertically center the items */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  Optional: Adds a shadow around the box */
+  /* border-radius: 8px;  Optional: Rounded corners */
+  /* border: 1px solid #ccc;  Optional: Border around the header */
+}
+
+
+.header-note-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.header-note-icon {
+  background-color: var(--notes-color-1);
+  color: var(--white-color);
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .note-header {
+    width: 100%;
+  }
+}

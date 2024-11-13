@@ -1,0 +1,50 @@
+.input-div {
+  border-bottom-left-radius: 0.5rem;
+  background-color: var(--home-back-color);
+  margin-bottom: 0rem;
+  cursor: pointer;
+}
+.input-container {
+  background-color: var(--white-color);
+  width: 73%;
+  position: fixed;
+
+  right: -3%;
+
+  bottom: 0rem;
+}
+.note-input {
+  background-color: var(--white-color);
+  width: 100%;
+  padding: 1rem;
+  margin: 0rem;
+  /* border-radius: 0.5rem; */
+  border: 25px solid #16008b;  
+  font-size: 1rem;
+}
+
+.note-input:focus {
+  outline: none;
+}
+.note-input::placeholder {
+  font-size: 1rem;
+  color: #9a9a9a;
+}
+.send-btn {
+  position: relative;
+  right: 5rem;
+  top: 3rem;
+  cursor: pointer;
+}
+.send-btn:hover {
+  transform: scale(1.2);
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  .input-container {
+    width: 100%;
+    bottom: -1rem;
+  }
+}
